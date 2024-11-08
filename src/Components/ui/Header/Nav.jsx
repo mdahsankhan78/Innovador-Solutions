@@ -7,7 +7,7 @@ import {
   Sheet,
   SheetContent,
   SheetTrigger,
-} from "../ui/sheet";
+} from "../sheet";
 import Sidebar from "./Sidebar";
 import Sidebarmain from "./Sidebar";
 import { useState } from "react";

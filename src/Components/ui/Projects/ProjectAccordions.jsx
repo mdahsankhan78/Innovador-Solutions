@@ -3,7 +3,7 @@ import {
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
-  } from "@/components/ui/accordionprojects"
+  } from "../accordionprojects"
 import React from 'react'
 
 const ProjectAccordions = () => {

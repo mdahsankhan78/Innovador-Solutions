@@ -2,7 +2,7 @@ import {
   Sheet,
   SheetContent,
   SheetTrigger,
-} from "@/components/ui/sheet";
+} from "../sheet";
 
 import { AlignJustify, Sidebar } from "lucide-react";
 // import Logo from "../Logo";

@@ -6,7 +6,7 @@ import {
     CarouselItem,
     CarouselNext,
     CarouselPrevious,
-} from "@/components/ui/carousel"
+} from "../carousel"
 
 export function ProjectsCarousel() {
     return (

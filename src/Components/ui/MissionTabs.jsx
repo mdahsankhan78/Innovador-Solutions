@@ -4,7 +4,7 @@ import {
     TabsContent,
     TabsList,
     TabsTrigger,
-} from "../tabs"
+} from "./tabs"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBrain, faEye, faFlag } from '@fortawesome/free-solid-svg-icons'
 

@@ -4,7 +4,7 @@ import {
     CardDescription,
     CardHeader,
     CardTitle,
-} from "@/components/ui/card";
+} from "../ui/card";
 // import swiper styles
 import { Swiper, SwiperSlide } from "swiper/react";
 // import './style.css';

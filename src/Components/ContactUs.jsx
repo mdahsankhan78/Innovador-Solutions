@@ -1,6 +1,6 @@
 import { faEnvelope, faMapLocation } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Textarea } from "@/components/ui/textarea"
+import { Textarea } from "./ui/textarea"
 import { Input } from "@/components/ui/input"
 import React from 'react'
 import CustomButton from './ui/CustomButton'

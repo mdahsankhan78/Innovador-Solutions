@@ -5,7 +5,7 @@ import {
     SheetHeader,
     SheetTitle,
     SheetTrigger,
-  } from "@/components/ui/sheet";
+  } from "../ui/sheet";
   
   import { AlignJustify } from "lucide-react";
   // import Logo from "../Logo";

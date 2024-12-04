@@ -5,7 +5,7 @@ module.exports =  withMT({
   content: [
       "./pages/**/*.{js,jsx}",
       "./components/**/*.{js,jsx}",
-      "./app/**/*.{js,jsx}",
+      "./app/**/*.{js,jsx}",	
       "./src/**/*.{js,jsx}",
   ],
   prefix: "",

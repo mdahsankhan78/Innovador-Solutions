@@ -35,7 +35,7 @@ const ContactUs = () => {
                         <div className='col-span-1'>
                             <div class="relative group w-20">
                                 {/* <!-- Yellow tilted div --> */}
-                                <div class="absolute inset-1 transform bg-primary transition-transform duration-500 transform group-hover:scale-110 group-hover:rotate-6 group-hover:translate-x-2 group-hover:translate-y-2"></div>
+                                <div class="absolute inset-1 bg-primary transition-transform duration-500 transform group-hover:scale-110 group-hover:rotate-6 group-hover:translate-x-1 group-hover:translate-y-2"></div>
 
                                 {/* <!-- Black container with content --> */}
                                 <div class="relative z-10 flex items-center  bg-black text-white">
@@ -57,7 +57,7 @@ const ContactUs = () => {
                         <div className='col-span-1'>
                             <div class="relative group w-20">
                                 {/* <!-- Yellow tilted div --> */}
-                                <div class="absolute inset-1 transform bg-primary transition-transform duration-500 transform group-hover:scale-110 group-hover:rotate-6 group-hover:translate-x-2 group-hover:translate-y-2"></div>
+                                <div class="absolute inset-1 bg-primary transition-transform duration-500 transform group-hover:scale-110 group-hover:rotate-6 group-hover:translate-x-1 group-hover:translate-y-2"></div>
 
                                 {/* <!-- Black container with content --> */}
                                 <div class="relative z-10 flex items-center  bg-black text-white">
@@ -78,7 +78,7 @@ const ContactUs = () => {
                         <div className='col-span-1'>
                             <div class="relative group w-20">
                                 {/* <!-- Yellow tilted div --> */}
-                                <div class="absolute inset-1 transform bg-primary transition-transform duration-500 transform group-hover:scale-110 group-hover:rotate-6 group-hover:translate-x-2 group-hover:translate-y-2"></div>
+                                <div class="absolute inset-1 bg-primary transition-transform duration-500 transform group-hover:scale-110 group-hover:rotate-6 group-hover:translate-x-1 group-hover:translate-y-2"></div>
 
                                 {/* <!-- Black container with content --> */}
                                 <div class="relative z-10 flex items-center  bg-black text-white">

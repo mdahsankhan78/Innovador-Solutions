@@ -126,10 +126,8 @@ const Carousel = () => {
 
     return (
         <div className="mb-12 xl:mb-32 my-8">
-            <div className="mx-auto overflow-x-hidden">
+            <div className="mx-auto">
                 <Swiper
-                    data-aos='slide-left'
-                    data-aos-duration='1000'
                     slidesPerView={1}
                     breakpoints={{
                         800: { slidesPerView: 2 },

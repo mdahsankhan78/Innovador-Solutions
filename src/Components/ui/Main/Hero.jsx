@@ -1,32 +1,82 @@
-import React from 'react';
-import { MDBCarousel, MDBCarouselItem, MDBCarouselCaption } from 'mdb-react-ui-kit';
+import * as React from "react"
+import Autoplay from "embla-carousel-autoplay";
 
-export default function Hero() {
-  return (
-    <MDBCarousel showIndicators showControls fade>
-      <MDBCarouselItem itemId={1}>
-        <img src='https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg' className='d-block w-100' alt='...' />
-        <MDBCarouselCaption>
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </MDBCarouselCaption>
-      </MDBCarouselItem>
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "../carousel"
+import CustomButton from '../CustomButton'
 
-      <MDBCarouselItem itemId={2}>
-        <img src='https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg' className='d-block w-100' alt='...' />
-        <MDBCarouselCaption>
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </MDBCarouselCaption>
-      </MDBCarouselItem>
+export function Hero() {
+    return (
+        <div className="overflow-x-hidden" >
+            <Carousel
+                opts={{
+                    align: "start",
+                    loop: true,
+                }}
+                plugins={[
+                    Autoplay({
+                      delay: 5000,
+                    }),
+                  ]}
+                className="w-full h-full">
+                <CarouselContent>
+                    <CarouselItem>
+                        <section className="relative w-full h-screen overflow-hidden">
+                            {/* Background Video */}
+                            <video
+                                autoPlay
+                                muted
+                                loop
+                                className="absolute top-0 left-0 w-full h-full object-cover"
+                            >
+                                <source src="/images/city.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                            <div className="bg-black opacity-30 z-1 inset-0 absolute"></div>
 
-      <MDBCarouselItem itemId={3}>
-        <img src='https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg' className='d-block w-100' alt='...' />
-        <MDBCarouselCaption>
-          <h5>Third slide label</h5>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-        </MDBCarouselCaption>
-      </MDBCarouselItem>
-    </MDBCarousel>
-  );
+                            {/* Content */}
+                            <div className="flex items-center transform text-white h-full py-6 mt-10 px-20 w-2/3">
+                                <div>
+                                    <h1 className="text-4xl md:text-6xl mb-4">Get Familiar with Website</h1>
+                                    <h1 className="text-4xl md:text-8xl mb-4">Digital Marketing</h1>
+                                    <p className="text-xl md:text-3xl mb-4">Your tagline or content goes here Lorem ipsum dolor sit amet..</p>
+                                    <CustomButton name={'Services'} size={'w-[150px]'} bg={''} layerbg={'primary'} border={'white'} />
+                                </div>
+                            </div>
+                        </section>
+                    </CarouselItem>
+                    <CarouselItem>
+                        <section className="relative w-full h-screen overflow-hidden">
+                            {/* Background Video */}
+                            <video
+                                autoPlay
+                                muted
+                                loop
+                                className="absolute top-0 left-0 w-full h-full object-cover"
+                            >
+                                <source src="/images/tech.webm" type="video/webm" />
+                                Your browser does not support the video tag.
+                            </video>
+                            <div className="bg-black opacity-30 z-1 inset-0 absolute"></div>
+                            {/* Content */}
+                            <div className="flex items-center transform text-white h-full px-20 w-2/3">
+                                <div>
+                                    <h1 className="text-4xl md:text-6xl mb-4">Get Familiar with Website</h1>
+                                    <h1 className="text-4xl md:text-8xl mb-4">Digital Marketing</h1>
+                                    <p className="text-xl md:text-3xl">Your tagline or content goes here Lorem ipsum dolor sit amet..</p>
+                                </div>
+                            </div>
+                        </section>
+                    </CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+            </Carousel>
+        </div>
+    )
 }

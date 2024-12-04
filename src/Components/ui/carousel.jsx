@@ -1,9 +1,10 @@
 import * as React from "react"
-import { ArrowLeftIcon, ArrowRightIcon } from "@radix-ui/react-icons"
 import useEmblaCarousel from "embla-carousel-react";
 
 import { cn } from "@/lib/utils"
-import { Button } from "./button"
+import { Button } from "@/components/ui/button"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 const CarouselContext = React.createContext(null)
 
@@ -156,15 +157,16 @@ const CarouselPrevious = React.forwardRef(({ className, variant = "outline", siz
       ref={ref}
       variant={variant}
       size={size}
-      className={cn("h-14 w-14 rounded-full border-foreground bg-gray-200 border-2 mt-8 hover:bg-primary", orientation === "horizontal"
-        ? "-left-120 -top-200 -translate-y-2/2 "
-        : "-top-12 left-1/2 -translate-x-1/2 rotate-90", className)}
+      className={cn("absolute bg-transparent border-none hover:bg-transparent", orientation === "horizontal"
+        ? "left-12 top-1/2 -translate-y-1/2"
+        : "-top-12 -translate-x-1/2 rotate-90", className)}
       disabled={!canScrollPrev}
       onClick={scrollPrev}
       {...props}>
-      <ArrowLeftIcon className="text-foreground h-4 w-4" />
+        <FontAwesomeIcon icon={faChevronLeft} className="text-white h-40" />
       <span className="sr-only">Previous slide</span>
-    </Button>)
+    </Button>
+    )
   );
 })
 CarouselPrevious.displayName = "CarouselPrevious"
@@ -177,13 +179,13 @@ const CarouselNext = React.forwardRef(({ className, variant = "outline", size = 
       ref={ref}
       variant={variant}
       size={size}
-      className={cn(" h-14 w-14 rounded-full border-foreground bg-gray-200 border-2 mt-8 hover:bg-primary mr-auto ml-2", orientation === "horizontal"
-        ? "right-0 top-2/2 -translate-y-2/2"
+      className={cn("absolute bg-transparent border-none hover:bg-transparent", orientation === "horizontal"
+        ? "right-12 top-1/2 -translate-y-1/2"
         : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90", className)}
-      disabled={!canScrollNext} 
+      disabled={!canScrollNext}
       onClick={scrollNext}
       {...props}>
-      <ArrowRightIcon className="h-4 w-4" />
+      <FontAwesomeIcon icon={faChevronRight} className="text-white" size="2x" />
       <span className="sr-only">Next slide</span>
     </Button>)
   );

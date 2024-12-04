@@ -20,7 +20,7 @@ const ServicesCards = () => {
 
         <div class="relative h-full pb-20 md:pb-10 sm:max-w-full lg:max-w-screen-xl">
           <div class=" max-w-7xl relative">
-            <div class="grid grid-cols-1 gap-2 mt-12 sm:grid-cols-2 lg:mt-16">
+            <div class="grid grid-cols-1 gap-2 mt-12 lg:mt-16">
 
               <div class="transition-all duration-500 hover:shadow-lg bg-secondary p-4 relative group" data-aos='fade-up'>
                 <div

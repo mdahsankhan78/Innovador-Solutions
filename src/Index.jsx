@@ -12,6 +12,8 @@ import Industries from "./Components/Industries";
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Blogs from './Components/Blogs';
+import { Hero } from './Components/ui/Main/Hero';
+import StickyServices from './Components/ui/Services/StickyServices';
 
 const Index = () => {
   return (
@@ -21,14 +23,12 @@ const Index = () => {
       {/* Once animation is complete, render the content */}
 
       <div className="relative md:-top-24 inset-0 z-0 h-screen">
-        <Main />
+        <Hero />
       </div>
-        <ServicesCards1 />
+      <StickyServices />
       <About />
       <Projects />
-      <Services />
-      {/* <Testimonials /> */}
-      {/* <Mission /> */}
+      {/* <Services /> */}
       <Industries />
       <Mission />
       <ContactUs />
